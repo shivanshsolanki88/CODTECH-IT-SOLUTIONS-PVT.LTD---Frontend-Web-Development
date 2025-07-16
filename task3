@@ -1,1 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivansh Solanki | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1 class="logo">Shivansh</h1>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Hello, I'm <span>Shivansh Solanki</span></h2>
+      <p>Web Developer | Cybersecurity Enthusiast</p>
+    </div>
+  </section>
+
+  <section id="about" class="about section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a dedicated Front-End Developer and Cybersecurity learner with a passion for crafting clean, responsive websites. I enjoy solving real-world problems through code.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Python</span>
+        <span>Kali Linux</span>
+        <span>GitHub</span>
+        <span>Responsive Design</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Citizen Connect</h3>
+          <p>AI-based portal to explore Indian government schemes and services.</p>
+        </div>
+        <div class="project-card">
+          <h3>JS Quiz App</h3>
+          <p>Responsive quiz application using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio to showcase skills and past projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>📧 Email: shivanshsolanki@example.com</p>
+      <p>🔗 LinkedIn: linkedin.com/in/shivanshsolanki</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Shivansh Solanki | All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+/* Reset & Basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Navbar */
+nav {
+  background: #0f172a;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero h2 span {
+  color: #38bdf8;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* Skills */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-grid span {
+  background: #38bdf8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+  }
+}
+
+
 
